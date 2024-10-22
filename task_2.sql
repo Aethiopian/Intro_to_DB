@@ -5,11 +5,10 @@ DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS authors;
 
--- Create authors table
+-- Create authors table with author_name attribute
 CREATE TABLE authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
+    author_name VARCHAR(100) NOT NULL,
     bio TEXT
 );
 
