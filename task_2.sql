@@ -6,14 +6,14 @@ DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS authors;
 
 -- Create authors table with author_name attribute
-CREATE TABLE authors (
+CREATE TABLE Authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
     author_name VARCHAR(100) NOT NULL,
     bio TEXT
 );
 
 -- Create books table
-CREATE TABLE books (
+CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     author_id INT,
@@ -24,7 +24,7 @@ CREATE TABLE books (
 );
 
 -- Create customers table
-CREATE TABLE customers (
+CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE customers (
 );
 
 -- Create orders table
-CREATE TABLE orders (
+CREATE TABLE Orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -42,7 +42,7 @@ CREATE TABLE orders (
 );
 
 -- Create order_details table
-CREATE TABLE order_details (
+CREATE TABLE Order_details (
     order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
