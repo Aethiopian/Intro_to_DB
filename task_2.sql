@@ -38,7 +38,7 @@ CREATE TABLE Orders (
     customer_id INT,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     status VARCHAR(50),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- Create order_details table
